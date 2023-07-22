@@ -1,0 +1,81 @@
+//This project is adapted for mobile, tablet devices. The "mixin_rules" mixin is used to set the media rules. All styles for a specific device are in the rules
+//   @include media(mobile | tablet | desktop) , where mobile, tablet and desktop are names of rules from mixin.
+
+//The CSS rule targets elements with the class "dashboards-list". The main container for components on page.
+.dashboards-list{
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    @include media(tablet){
+        margin-top: 35px;
+    }
+
+    @include media(desktop){
+        margin-top: 122px;
+    }
+}
+
+//CSS styles for container with headings on page.
+.title-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+//CSS styles for headings on page.
+.title-wrapper .heading-h2{
+    color: var(--text-white);
+}
+
+//CSS styles for headings on page.
+.title-wrapper .heading-h3{
+    color: var(--text-white);
+}
+
+//CSS styles for chart container.
+.chart-container{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 4px 4px 20px 0px rgba(10, 10, 10, 0.24);
+    background-color: var(--cards-bg-color);
+
+    @include media(desktop){
+        width: 550px;
+    }
+}
+
+//The CSS rule targets canvas elements with charts .
+canvas{
+    margin: 0;
+
+    @media screen and (min-width: 319px) {
+        width: calc(100vw - 19px);
+    }
+    @media screen and (min-width: 480px) {
+        width: 460px;
+    }
+    @media screen and (min-width: 1244px) {
+        width: 550px;
+    }
+}
+
+//The CSS rule targets elements with the class "temp_high".
+.temp_high {
+    color: red;
+    font-weight: bold;
+}
+
+//The CSS rule targets elements with the class "temp_warn".
+.temp_warn {
+    color: orange;
+    font-weight: bold;
+}
+

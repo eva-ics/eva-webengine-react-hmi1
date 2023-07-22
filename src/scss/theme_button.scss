@@ -1,0 +1,106 @@
+//This project is adapted for mobile, tablet devices. The "mixin_rules" mixin is used to set the media rules. All styles for a specific device are in the rules
+//   @include media(mobile | tablet | desktop) , where mobile, tablet and desktop are names of rules from mixin.
+
+//CSS styles for theme button component. You can change colors and backgrounds of theme button.
+
+//CSS styles for button wrapper. Main parent container.
+.switch-button-wrapper{
+    position: relative;
+    width: 66px;
+    height: 18px;
+    border-radius: 1px;
+    border: 0.5px solid var(--text-mode-color);
+    cursor: pointer;
+}
+
+//CSS styles for dark & light mode divs
+.theme-switcher__dark{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 33px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans",sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.9;
+    color:var(--btns-text-color);
+    background-color: var(--dark-theme-switch);
+    transition: 0.3s;
+}
+
+//CSS styles for dark & light mode divs
+.theme-switcher__light{
+    position: absolute;
+   transform: translateX(-32px);
+    width: 33px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans",sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.9;
+    color:var(--cards-bg-color);
+    background-color: var(--light-theme-switch);
+    transition: 0.3s;
+}
+
+//CSS styles for dark & light mode switchers.
+.dark{
+    position: absolute;
+    width: 33px;
+    height: 18px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans",sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.9;
+    color: var(--text-mode-color);
+    background-color: transparent;
+}
+
+//CSS styles for dark & light mode switchers.
+.light{
+    position: absolute;
+    width: 33px;
+    height: 18px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans",sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.9;
+    color: var(--text-mode-color);
+}
+
+//CSS styles for parent container for theme button. If you need insert this button inside another components , please delete "absolute" position.
+.theme-container{
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  z-index: 100;
+
+  @include media(tablet){
+    left: 15%;
+    top: 10px;
+  }
+
+  @include media(desktop){
+    left: 15%;
+    top: 20px;
+  }
+}

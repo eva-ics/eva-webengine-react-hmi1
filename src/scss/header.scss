@@ -1,0 +1,170 @@
+//This project is adapted for mobile, tablet devices. The "mixin_rules" mixin is used to set the media rules. All styles for a specific device are in the rules
+//   @include media(mobile | tablet | desktop) , where mobile, tablet and desktop are names of rules from mixin.
+
+//===========DESKTOP VERSION==========//
+
+// The ".header-nav" class defines the styling for the navigation section in the header of a webpage.
+.header-nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+//The ".header-nav__link" class defines the styling for the links within the navigation section of the header.
+.header-nav__link{
+    position: relative;
+    padding: 15px 10px;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color:var(--navlink-color);
+    overflow: hidden;
+
+    @include media(tablet) {
+        padding: 10px;
+    }
+
+    @include media(desktop) {
+        font-size: 20px;
+
+        &:before{
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 100%;
+            background-color: var(--focus-color);
+            transform: translateX(-150px);
+            transition: 0.5s;
+        }
+        &:hover{
+            color: var(--focus-color);
+        }
+        &:hover:before{
+            transform: translateX(0);
+            transition: 0.5s;
+        }
+    }
+}
+
+//The ".active" class defines the styling for an active element.
+.active{
+    background-color: var(--active-header-color);
+    border-radius: 5px;
+}
+
+//===========MOBILE VERSION==========//
+
+//The ".header-mobile__content" class defines the styling for the content within the mobile header section.
+.header-mobile__content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+//The ".burger-menu" class defines the styling for a burger menu icon.
+.burger-menu{
+    position: absolute;
+    right: 10px;
+    top: -5px;
+    width: 32px;
+    height: 32px;
+}
+
+//The ".header-mobile" class defines the styling for the mobile header section.
+.header-mobile{
+    padding: 10px 0;
+}
+
+//The ".backdrop-hidden" class defines the styling for a hidden backdrop element when burger-menu closed.
+.backdrop-hidden{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 65px 40px;
+    background-color: var(--body-bg-color);
+    transform: translateX(800px);
+    z-index: 500;
+    transition: 0.5s;
+}
+
+//The ".backdrop-visible" class defines the styling for a visible backdrop element when burger-menu open.
+.backdrop-visible{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 65px 40px;
+    background-color: var(--body-bg-color);
+    transform: translateX(0);
+    z-index: 500;
+    transition: 0.5s;
+}
+
+//The ".header-nav__mobile" class defines the styling for the mobile navigation section.
+.header-nav__mobile{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+//The ".active-mobile" class defines the styling for an active mobile navigation item.
+.active-mobile{
+    position: relative;
+    color: var(--secondary-text-color)!important;
+    &:before{
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        background-color: var(--secondary-text-color);
+        transition: 0.5s;
+    }
+}
+
+//The ".header-nav-link__mobile" class defines the styling for a mobile navigation link within the header.
+.header-nav-link__mobile{
+    position: relative;
+    padding: 5px 0;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color:var(--navlink-color);
+}
+
+//The ".close-menu" class defines the styling for a close menu icon.
+.close-menu{
+    position: absolute;
+    width: 32px;
+    height: 30px;
+    right: 16px;
+    top: 20px;
+}
+
+//The ".mobile-menu-content" class defines the styling for the content within a mobile menu.
+.mobile-menu-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}

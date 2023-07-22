@@ -1,0 +1,54 @@
+//File with downloaded project fonts
+
+/*Chakra Petch*/
+
+@font-face {
+  font-family: "Chakra Petch";
+  src: local("Chakra Petch"),
+  url(../../public/assets/fonts/ChakraPetch-SemiBold.ttf) format("truetype"),
+  url(../../public/assets/fonts/ChakraPetch-Medium.woff2) format("woff2"),
+  url(../../public/assets/fonts/ChakraPetch-Medium.eot) format("embedded-opentype");
+  font-weight: 600;
+}
+
+/*Inter*/
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+  url(../../public/assets/fonts/Inter-Bold.ttf) format("truetype"),
+  url(../../public/assets/fonts/Inter-Bold.woff) format("woff"),
+  url(../../public/assets/fonts/Inter-Bold.woff2) format("woff2"),
+  url(../../public/assets/fonts/Inter-Bold.eot) format("embedded-opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+  url(../../public/assets/fonts/Inter-Regular.ttf) format("truetype"),
+  url(../../public/assets/fonts/Inter-Regular.woff) format("woff"),
+  url(../../public/assets/fonts/Inter-Regular.woff2) format("woff2"),
+  url(../../public/assets/fonts/Inter-Regular.eot) format("embedded-opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+  url(../../public/assets/fonts/Inter-Medium.ttf) format("truetype"),
+  url(../../public/assets/fonts/Inter-Medium.woff) format("woff"),
+  url(../../public/assets/fonts/Inter-Medium.woff2) format("woff2"),
+  url(../../public/assets/fonts/Inter-Medium.eot) format("embedded-opentype");
+  font-weight: 400;
+}
+
+/*Roboto*/
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url(../../public/assets/fonts/Roboto-Medium.ttf) format("truetype"),
+  url(../../public/assets/fonts/Roboto-Medium.woff) format("woff"),
+  url(../../public/assets/fonts/Roboto-Medium.woff2) format("woff2"),
+  url(../../public/assets/fonts/Roboto-Medium.eot) format("embedded-opentype");
+  font-weight: 500;
+}
+

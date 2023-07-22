@@ -1,0 +1,67 @@
+//The main CSS styles for colors and main container.
+
+//Color styles for Dark Mode
+:root[data-theme="dark"]{
+    --body-bg-color:#131721;
+    --main-blue-color: #0085FF;
+    --btns-text-color:#ffff;
+    --text-white:#FFF;
+    --text-blue:#0085FF;
+    --main-text-color:#FFF;
+    --secondary-text-color:#C1C1C1;
+    --decorator-color:#373737;
+    --text-mode-color:#373737;
+    --active-bg-color: #0671d3;
+    --cards-bg-color: #18212B;
+    --btn-disabled:#646464;
+    --logo-color:#29AAE1;
+    --focus-color:#0085FF;
+    --light-theme-switch:#02CA2E;
+    --dark-theme-switch:#013989;
+    --active-header-color:#18212B;
+    --navlink-color: #0085FF;
+    --label-text-color:#C1C1C1;
+    --infobar-bg-color: rgba(24, 33, 43, 0.85);
+    --infobar-text-color:#C1C1C1;
+    --infobar-separator-color: rgba(0, 133, 255, 0.86);
+    --slider-btn-color:#FFF;
+}
+
+//Color styles for Light Mode
+:root[data-theme='light']{
+    --body-bg-color: #F5F7FB;
+    --main-blue-color: #0085FF;
+    --btns-text-color:#18212B;
+    --text-white:#18212B;
+    --text-blue:#0085FF;
+    --main-text-color:#FFF;
+    --secondary-text-color:#18212B;
+    --btn-disabled:#646464;
+    --focus-color:#0085FF;
+    --light-theme-switch:#02CA2E;
+    --dark-theme-switch:#013989;
+    --active-header-color: rgba(0, 133, 255, 0.25);
+    --navlink-color: #0085FF;
+    --label-text-color: #292929;
+    --infobar-bg-color: rgba(203, 201, 201, 0.86);
+    --infobar-text-color:#646464;
+    --infobar-separator-color: rgba(100, 100, 100, 0.85);
+    --slider-btn-color:#FFF;
+    --text-mode-color:#D0D0D0;
+}
+
+.container {
+    max-width: 480px;
+    padding: 0 10px 100px 10px;
+    margin: 0 auto;
+
+    @include media(tablet) {
+        max-width: 768px;
+        padding: 0 40px 60px 40px;
+    }
+
+    @include media(desktop) {
+        max-width: 1366px;
+        padding: 0 60px 80px 60px;
+    }
+}

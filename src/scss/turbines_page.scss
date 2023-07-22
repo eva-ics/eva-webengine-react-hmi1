@@ -1,0 +1,97 @@
+//This project is adapted for mobile, tablet devices. The "mixin_rules" mixin is used to set the media rules. All styles for a specific device are in the rules
+//   @include media(mobile | tablet | desktop) , where mobile, tablet and desktop are names of rules from mixin.
+
+//CSS styles for main parent container.
+.turbines-wrapper{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+//The CSS rule targets the div element with the classes "eva.canvas.area.turbine".
+div.eva.canvas.area.turbine {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 420px;
+
+    @include media(desktop){
+        width: 500px;
+        height: 680px;
+    }
+}
+
+div.eva.element.turbine{
+    background-color: #02CA2E;
+}
+
+//The CSS rule targets the div element with the classes "eva.canvas.container".
+div.eva.canvas.container {
+    position: relative;
+    padding: 0;
+}
+
+//The CSS rule targets the div element with the classes "eva.canvas.element".
+div.eva.canvas.element {
+    border: 1px solid black;
+    background-color: #333;
+    width: 120px;
+    color: white;
+    white-space: nowrap;
+}
+
+//The CSS rule targets the div element with the classes "eva.canvas.element.gate".
+div.eva.canvas.element.gate {
+    width: 100px;
+    background-color: transparent;
+    color: black;
+    border: 0px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.eva.canvas.element.turbine{
+
+@include media(desktop){
+    margin-top: 70px;
+    margin-left: 100px;
+
+}
+}
+
+div.eva.canvas.element.turbine.m1{
+
+    @include media(desktop){
+        top: -20px;
+        left: 210px;
+    }
+}
+
+//The CSS rule targets the div element with the classes "eva.canvas.element.turbine.gate".
+div.eva.canvas.element.turbine.gate{
+    z-index: 100;
+    @include media(desktop){
+        top:0;
+        margin-right: 50px;
+    }
+}
+
+//The CSS rule targets the div element with the classes "eva.canvas.element.m1".
+div.eva.canvas.element.m1 {
+    width: 100px;
+    background-color: transparent;
+    color: black;
+    border: 0;
+    position: absolute;
+    top: 50px;
+    right: 80px;
+}
+
+.eva.button.container.toggle.gate > label > .gate  {
+  color: black;
+}

@@ -1,0 +1,114 @@
+//This project is adapted for mobile, tablet devices. The "mixin_rules" mixin is used to set the media rules. All styles for a specific device are in the rules
+//   @include media(mobile | tablet | desktop) , where mobile, tablet and desktop are names of rules from mixin.
+
+//The CSS rule targets the span elements with the class "eva.state". Styles for success | disconnect | error messages.
+span.eva.state {
+  &.ok{
+    /*color:var(--btns-text-color);*/
+  }
+
+  &.error{
+    color: red;
+    font-weight: bold;
+
+    &:before{
+      content: "ERR "
+    }
+  }
+
+  &.disconnected{
+    color: var(--secondary-text-color);
+  }
+}
+
+//The CSS rule targets the table element with the class "eva.state.valuetable".
+table.eva.state.valuetable {
+  border-collapse: collapse;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: var(--cards-bg-color);
+  box-shadow: 4px 4px 20px 0px rgba(10, 10, 10, 0.24);
+}
+
+//The CSS rule targets the th element of table with the classes "eva.state.valuetable".
+th.eva.state.valuetable {
+  position: relative;
+  text-align: left;
+  font-family: "Roboto",sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 15px;
+  color: var(--secondary-text-color);
+
+  &:before{
+    content:"";
+    position: absolute;
+    margin-left: 10px;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 0.5px;
+    background-color: var(--text-mode-color);
+  }
+
+  @include media(tablet){
+    font-size: 14px;
+  }
+
+  @include media(desktop){
+    font-size: 16px;
+  }
+}
+
+//The CSS rule targets the tr element of table with the classes "eva.state.valuetable".
+tr.eva.state.valuetable{
+  position: relative;
+
+  &:last-child::before{
+   border: none;
+  }
+  &:first-child::before{
+    border: none;
+  }
+
+  &:before{
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    margin-left: 10px;
+    height: 0.5px;
+    border-bottom:  dotted var(--text-mode-color);
+  }
+
+  &:hover{
+  background-color: var(--main-blue-color);
+  }
+}
+
+//The CSS rule targets the td and label and value inside element of table with the classes "eva.state.valuetable".
+td.eva.state.valuetable {
+  &.label,
+  &.value {
+    width: 100px;
+    padding: 15px;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--btns-text-color);
+
+    @include media(tablet) {
+      font-size: 13px;
+    }
+  }
+}
+
+
+
+

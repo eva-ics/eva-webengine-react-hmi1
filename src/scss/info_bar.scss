@@ -1,0 +1,40 @@
+//This project is adapted for mobile, tablet devices. The "mixin_rules" mixin is used to set the media rules. All styles for a specific device are in the rules
+//   @include media(mobile | tablet | desktop) , where mobile, tablet and desktop are names of rules from mixin.
+
+//The CSS rule targets of element div with the class ".infobar".
+.infobar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--infobar-bg-color);
+  color: var(--infobar-text-color);
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  &>span{
+    position: relative;
+    padding: 0 10px;
+  }
+  &>span:before{
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    height: 90%;
+    width: 1px;
+    background-color: var(--infobar-separator-color);
+  }
+
+  @include media(desktop){
+    font-size: 16px;
+  }
+}
