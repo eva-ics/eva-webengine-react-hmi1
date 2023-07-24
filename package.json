@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@eva-ics/webengine": "^0.5.14",
-    "@eva-ics/webengine-react": "^0.1.2",
+    "@eva-ics/webengine-react": "^0.1.3",
     "@reduxjs/toolkit": "^1.9.5",
     "chart.js": "^4.3.0",
     "chartjs-adapter-date-fns": "^3.0.0",

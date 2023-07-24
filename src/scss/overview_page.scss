@@ -39,7 +39,7 @@
 }
 
 //CSS styles for chart container.
-.chart-container{
+div.eva.chart.container {
     position: relative;
     margin: 0;
     width: 100%;
@@ -53,8 +53,10 @@
 }
 
 //The CSS rule targets canvas elements with charts .
-canvas{
+div.eva.chart.container > canvas {
     margin: 0;
+    padding: 0px;
+    width: 100%;
 
     @media screen and (min-width: 319px) {
         width: calc(100vw - 19px);

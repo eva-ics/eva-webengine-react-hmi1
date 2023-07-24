@@ -270,7 +270,7 @@ const HmiDashboard = ({
       ) : (
         <HeaderDesktop setDashboardPage={setDashboardPage} logout={logout} />
       )}
-      <div className="container">
+      <div className="root-container">
         <div>&nbsp;</div>
         <div className="title-wrapper ">
           <h3 className="heading-h3">{page}</h3>

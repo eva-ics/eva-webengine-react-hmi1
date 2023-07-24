@@ -18,7 +18,7 @@ const TurbinesPage = ({ eva }: TurbinesPageProps) => {
 
   return (
     <>
-      <div className="turbines-wrapper container">
+      <div className="turbines-wrapper root-container">
         <Canvas
           css_class="turbine"
           image="https://upload.wikimedia.org/wikipedia/commons/e/ee/Wind_turbine_blank1.svg"
