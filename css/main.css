@@ -1,0 +1,1508 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.15; /* 1. Correct the line height in all browsers. */
+  -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+  -moz-tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+  tab-size: 4; /* 3 */
+}
+
+/*
+Sections
+========
+*/
+body {
+  margin: 0; /* Remove the margin in all browsers. */
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+button,
+select {
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+:root[data-theme=dark] {
+  --body-bg-color: #131721;
+  --main-blue-color: #0085ff;
+  --btns-text-color: #ffff;
+  --text-white: #fff;
+  --text-blue: #0085ff;
+  --main-text-color: #fff;
+  --secondary-text-color: #c1c1c1;
+  --decorator-color: #373737;
+  --text-mode-color: #373737;
+  --active-bg-color: #0671d3;
+  --cards-bg-color: #18212b;
+  --btn-disabled: #646464;
+  --logo-color: #29aae1;
+  --focus-color: #0085ff;
+  --light-theme-switch: #02ca2e;
+  --dark-theme-switch: #013989;
+  --active-header-color: #18212b;
+  --navlink-color: #0085ff;
+  --label-text-color: #c1c1c1;
+  --infobar-bg-color: rgba(24, 33, 43, 0.85);
+  --infobar-text-color: #c1c1c1;
+  --infobar-separator-color: rgba(0, 133, 255, 0.86);
+  --slider-btn-color: #fff;
+}
+
+:root[data-theme=light] {
+  --body-bg-color: #f5f7fb;
+  --main-blue-color: #0085ff;
+  --btns-text-color: #18212b;
+  --text-white: #18212b;
+  --text-blue: #0085ff;
+  --main-text-color: #fff;
+  --secondary-text-color: #18212b;
+  --btn-disabled: #646464;
+  --focus-color: #0085ff;
+  --light-theme-switch: #02ca2e;
+  --dark-theme-switch: #013989;
+  --active-header-color: rgba(0, 133, 255, 0.25);
+  --navlink-color: #0085ff;
+  --label-text-color: #292929;
+  --infobar-bg-color: rgba(203, 201, 201, 0.86);
+  --infobar-text-color: #646464;
+  --infobar-separator-color: rgba(100, 100, 100, 0.85);
+  --slider-btn-color: #fff;
+  --text-mode-color: #d0d0d0;
+}
+
+.root-container {
+  max-width: 480px;
+  padding: 0 10px 100px 10px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .root-container {
+    max-width: 768px;
+    padding: 0 40px 60px 40px;
+  }
+}
+@media screen and (min-width: 1245px) {
+  .root-container {
+    max-width: 1366px;
+    padding: 0 60px 80px 60px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  background-color: var(--body-bg-color);
+  overflow-x: hidden;
+}
+
+.heading-h2 {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@media screen and (min-width: 1245px) {
+  .heading-h2 {
+    font-size: 24px;
+  }
+}
+
+.heading-h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media screen and (min-width: 768px) {
+  .heading-h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1245px) {
+  .heading-h3 {
+    font-size: 24px;
+  }
+}
+
+button {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus, button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.gauge-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gauge-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  box-shadow: 4px 4px 20px 0px rgba(10, 10, 10, 0.24);
+  background-color: var(--cards-bg-color);
+  padding: 30px;
+}
+
+.gauge-preview {
+  max-width: 100%;
+  overflow: visible;
+}
+
+.gauge-value {
+  margin-top: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  fill: #6b7280;
+  color: var(--secondary-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gauge-value p {
+  margin-right: 5px;
+}
+
+.gauge-label {
+  font-weight: normal;
+}
+
+.gauge-progress-background-color {
+  stroke: #f7fafc;
+}
+
+.gauge-text-default-color {
+  font-size: 0.875rem;
+  font-weight: 500;
+  fill: #6b7280;
+}
+
+.gauge-middle-base-color {
+  fill: #d1d5db;
+}
+
+.gauge-midpoint-color {
+  fill: #ccc;
+}
+
+.gauge-tick-color {
+  stroke: #ccc;
+}
+
+.gauge-needle-color {
+  fill: #374151;
+}
+
+.gauge-progress-color {
+  stroke: #329e11;
+}
+
+.gauge-warning-progress-color {
+  stroke: #dceb15;
+}
+
+.gauge-critical-progress-color {
+  stroke: #c7472e;
+}
+
+input:checked + .eva.button.slider {
+  background-color: #2196F3;
+}
+
+input:focus + .eva.button.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .eva.button.slider:before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}
+@media screen and (min-width: 1245px) {
+  input:checked + .eva.button.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+}
+
+input.eva.button.value {
+  border: 0.5px solid var(--secondary-text-color);
+  background-color: transparent;
+  color: var(--btns-text-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+input.eva.button.value:focus {
+  border: 0.5px solid var(--focus-color);
+  outline: none;
+}
+@media screen and (min-width: 1245px) {
+  input.eva.button.value {
+    font-size: 16px;
+  }
+}
+
+span.eva.button.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--btn-disabled);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+span.eva.button.slider::before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 2px;
+  background-color: var(--slider-btn-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+@media screen and (min-width: 1245px) {
+  span.eva.button.slider::before {
+    height: 12px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+  }
+}
+
+div.eva.button.label.slider {
+  position: absolute;
+  left: 38px;
+  top: 3px;
+  display: inline-block;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--secondary-text-color);
+}
+@media screen and (min-width: 1245px) {
+  div.eva.button.label.slider {
+    left: 70px;
+    font-size: 13px;
+    top: 5px;
+  }
+}
+
+div.eva.button.container {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+div.eva.button.label.input {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  color: var(--btns-text-color);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+}
+@media screen and (min-width: 1245px) {
+  div.eva.button.label.input {
+    font-size: 13px;
+  }
+}
+
+div.eva.button.container.toggle.gate {
+  width: 130px;
+}
+
+div.eva.button.container.run {
+  width: 70px;
+  margin: 0;
+  padding: 0;
+}
+
+div.eva.button.container.toggle {
+  flex-basis: 90px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+@media screen and (min-width: 1245px) {
+  div.eva.button.container.toggle {
+    flex-basis: 130px;
+  }
+}
+
+div.eva.button.container.value {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button.eva.button.run {
+  padding: 3px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 10px;
+  border-radius: 2px;
+  background-color: var(--main-blue-color);
+  color: var(--main-text-color);
+}
+@media screen and (min-width: 1245px) {
+  button.eva.button.run {
+    padding: 4px 20px;
+    font-size: 13px;
+  }
+}
+button.eva.button.run:disabled {
+  background-color: #999;
+}
+
+button.eva.button.run.m1 {
+  margin-left: 65px;
+  margin-bottom: 88px;
+}
+@media screen and (min-width: 1245px) {
+  button.eva.button.run.m1 {
+    margin-top: 50px;
+    margin-left: 25px;
+  }
+}
+
+div.eva.button.container.run.m1 {
+  width: 100px;
+}
+
+button.eva.button.input.apply {
+  padding: 3px 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: 2px;
+  background-color: var(--main-blue-color);
+  color: var(--main-text-color);
+}
+button.eva.button.input.apply::before {
+  content: "Apply";
+}
+button.eva.button.input.apply:disabled {
+  background-color: var(--btn-disabled);
+}
+@media screen and (min-width: 1245px) {
+  button.eva.button.input.apply {
+    padding: 4px 10px;
+  }
+}
+
+.eva.button.value.changed {
+  border: 1px solid orange;
+}
+
+.eva.button.block {
+  width: 100%;
+  border-radius: 2px;
+  background-color: var(--cards-bg-color);
+  box-shadow: 4px 4px 20px 0px rgba(10, 10, 10, 0.24);
+}
+@media screen and (min-width: 768px) {
+  .eva.button.block {
+    max-width: 550px;
+  }
+}
+.eva.button.block_container {
+  padding: 16px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media screen and (min-width: 1245px) {
+  .eva.button.block_container {
+    gap: 30px;
+  }
+}
+.eva.button.block_title {
+  width: 94%;
+  padding: 6px 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+  color: var(--secondary-text-color);
+  border-bottom: 1px solid var(--text-mode-color);
+  margin-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  .eva.button.block_title {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1245px) {
+  .eva.button.block_title {
+    width: 97%;
+    font-size: 16px;
+    padding: 12px 8px;
+  }
+}
+
+.eva.button.switch {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 16px;
+}
+@media screen and (min-width: 1245px) {
+  .eva.button.switch {
+    width: 60px;
+    height: 20px;
+  }
+}
+.eva.button.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+input.eva.login {
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 2px;
+  border: 0.5px solid var(--secondary-text-color);
+  background-color: transparent;
+  font-size: 18px;
+  color: var(--secondary-text-color);
+  padding: 15px;
+}
+input.eva.login.checkbox {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transform: translateY(-4px);
+}
+input.eva.login:focus {
+  outline: none;
+  border: 0.5px solid var(--focus-color);
+}
+
+button.eva.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 2px;
+  margin-top: 40px;
+  width: 100%;
+  padding: 13px 0;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--main-text-color);
+  background-color: var(--main-blue-color);
+  transition: 0.2s;
+}
+@media screen and (min-width: 1245px) {
+  button.eva.login {
+    padding: 16px 0;
+    font-size: 22px;
+  }
+  button.eva.login:hover {
+    background-color: #3293ea;
+    transition: 0.2s;
+  }
+}
+
+div.eva.login.progress {
+  color: var(--secondary-text-color);
+}
+
+div.eva.login.container {
+  padding: 0 10px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+div.eva.login.form-container {
+  width: 100%;
+  margin-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  div.eva.login.form-container {
+    width: 390px;
+  }
+}
+@media screen and (min-width: 1245px) {
+  div.eva.login.form-container {
+    margin-top: 20px;
+  }
+}
+
+form.eva.login {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+div.eva.login.logo {
+  height: 60px;
+  display: inline-block;
+}
+div.eva.login.logo:before {
+  content: url("https://www.bohemia-automation.com/images/icons/evalogo.svg");
+}
+
+div.eva.login.header {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: normal;
+  color: var(--main-blue-color);
+}
+div.eva.login.header:before {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  content: "HMI application";
+  color: var(--logo-color);
+}
+@media screen and (min-width: 1245px) {
+  div.eva.login.header:before {
+    font-size: 44px;
+  }
+}
+@media screen and (min-width: 1245px) {
+  div.eva.login.header {
+    font-size: 20px;
+  }
+}
+
+div.eva.login.row {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+div.eva.login.row.text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+div.eva.login.row.text > label {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--label-text-color);
+}
+@media screen and (min-width: 1245px) {
+  div.eva.login.row.text > label {
+    font-size: 16px;
+  }
+}
+
+div.eva.login.widerow {
+  margin-bottom: 5px;
+  color: var(--secondary-text-color);
+}
+
+div.eva.login.row.remember {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--btns-text-color);
+}
+div.eva.login.row.remember > label {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media screen and (min-width: 1245px) {
+  div.eva.login.row.remember > label {
+    font-size: 16px;
+  }
+}
+
+div.eva.login.qr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div.eva.login.label {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+div.eva.login.error {
+  color: red;
+  font-weight: bold;
+}
+
+span.eva.state.error {
+  color: red;
+  font-weight: bold;
+}
+span.eva.state.disconnected {
+  color: #999;
+}
+
+span.eva.state.ok {
+  /*color:var(--btns-text-color);*/
+}
+span.eva.state.error {
+  color: red;
+  font-weight: bold;
+}
+span.eva.state.error:before {
+  content: "ERR ";
+}
+span.eva.state.disconnected {
+  color: var(--secondary-text-color);
+}
+
+table.eva.state.valuetable {
+  border-collapse: collapse;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: var(--cards-bg-color);
+  box-shadow: 4px 4px 20px 0px rgba(10, 10, 10, 0.24);
+}
+
+th.eva.state.valuetable {
+  position: relative;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 15px;
+  color: var(--secondary-text-color);
+}
+th.eva.state.valuetable:before {
+  content: "";
+  position: absolute;
+  margin-left: 10px;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 0.5px;
+  background-color: var(--text-mode-color);
+}
+@media screen and (min-width: 768px) {
+  th.eva.state.valuetable {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1245px) {
+  th.eva.state.valuetable {
+    font-size: 16px;
+  }
+}
+
+tr.eva.state.valuetable {
+  position: relative;
+}
+tr.eva.state.valuetable:last-child::before {
+  border: none;
+}
+tr.eva.state.valuetable:first-child::before {
+  border: none;
+}
+tr.eva.state.valuetable:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 90%;
+  margin-left: 10px;
+  height: 0.5px;
+  border-bottom: dotted var(--text-mode-color);
+}
+tr.eva.state.valuetable:hover {
+  background-color: var(--main-blue-color);
+}
+
+td.eva.state.valuetable.label, td.eva.state.valuetable.value {
+  width: 100px;
+  padding: 15px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--btns-text-color);
+}
+@media screen and (min-width: 768px) {
+  td.eva.state.valuetable.label, td.eva.state.valuetable.value {
+    font-size: 13px;
+  }
+}
+
+.header-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.header-nav__link {
+  position: relative;
+  padding: 15px 10px;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--navlink-color);
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .header-nav__link {
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 1245px) {
+  .header-nav__link {
+    font-size: 20px;
+  }
+  .header-nav__link:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--focus-color);
+    transform: translateX(-150px);
+    transition: 0.5s;
+  }
+  .header-nav__link:hover {
+    color: var(--focus-color);
+  }
+  .header-nav__link:hover:before {
+    transform: translateX(0);
+    transition: 0.5s;
+  }
+}
+
+.active {
+  background-color: var(--active-header-color);
+  border-radius: 5px;
+}
+
+.header-mobile__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.burger-menu {
+  position: absolute;
+  right: 10px;
+  top: -5px;
+  width: 32px;
+  height: 32px;
+}
+
+.header-mobile {
+  padding: 10px 0;
+}
+
+.backdrop-hidden {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 65px 40px;
+  background-color: var(--body-bg-color);
+  transform: translateX(800px);
+  z-index: 500;
+  transition: 0.5s;
+}
+
+.backdrop-visible {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 65px 40px;
+  background-color: var(--body-bg-color);
+  transform: translateX(0);
+  z-index: 500;
+  transition: 0.5s;
+}
+
+.header-nav__mobile {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.active-mobile {
+  position: relative;
+  color: var(--secondary-text-color) !important;
+}
+.active-mobile:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--secondary-text-color);
+  transition: 0.5s;
+}
+
+.header-nav-link__mobile {
+  position: relative;
+  padding: 5px 0;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--navlink-color);
+}
+
+.close-menu {
+  position: absolute;
+  width: 32px;
+  height: 30px;
+  right: 16px;
+  top: 20px;
+}
+
+.mobile-menu-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.dashboards-list {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .dashboards-list {
+    margin-top: 35px;
+  }
+}
+@media screen and (min-width: 1245px) {
+  .dashboards-list {
+    margin-top: 122px;
+  }
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title-wrapper .heading-h2 {
+  color: var(--text-white);
+}
+
+.title-wrapper .heading-h3 {
+  color: var(--text-white);
+}
+
+div.eva.chart.container {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  border-radius: 2px;
+  box-shadow: 4px 4px 20px 0px rgba(10, 10, 10, 0.24);
+  background-color: var(--cards-bg-color);
+}
+@media screen and (min-width: 1245px) {
+  div.eva.chart.container {
+    width: 550px;
+  }
+}
+
+div.eva.chart.container > canvas {
+  margin: 0;
+  padding: 0px;
+  width: 100%;
+}
+@media screen and (min-width: 319px) {
+  div.eva.chart.container > canvas {
+    width: calc(100vw - 19px);
+  }
+}
+@media screen and (min-width: 480px) {
+  div.eva.chart.container > canvas {
+    width: 460px;
+  }
+}
+@media screen and (min-width: 1244px) {
+  div.eva.chart.container > canvas {
+    width: 550px;
+  }
+}
+
+.temp_high {
+  color: red;
+  font-weight: bold;
+}
+
+.temp_warn {
+  color: orange;
+  font-weight: bold;
+}
+
+.turbines-wrapper {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+div.eva.canvas.area.turbine {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 420px;
+}
+@media screen and (min-width: 1245px) {
+  div.eva.canvas.area.turbine {
+    width: 500px;
+    height: 680px;
+  }
+}
+
+div.eva.element.turbine {
+  background-color: #02CA2E;
+}
+
+div.eva.canvas.container {
+  position: relative;
+  padding: 0;
+}
+
+div.eva.canvas.element {
+  border: 1px solid black;
+  background-color: #333;
+  width: 120px;
+  color: white;
+  white-space: nowrap;
+}
+
+div.eva.canvas.element.gate {
+  width: 100px;
+  background-color: transparent;
+  color: black;
+  border: 0px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+@media screen and (min-width: 1245px) {
+  .eva.canvas.element.turbine {
+    margin-top: 70px;
+    margin-left: 100px;
+  }
+}
+
+@media screen and (min-width: 1245px) {
+  div.eva.canvas.element.turbine.m1 {
+    top: -20px;
+    left: 210px;
+  }
+}
+
+div.eva.canvas.element.turbine.gate {
+  z-index: 100;
+}
+@media screen and (min-width: 1245px) {
+  div.eva.canvas.element.turbine.gate {
+    top: 0;
+    margin-right: 50px;
+  }
+}
+
+div.eva.canvas.element.m1 {
+  width: 100px;
+  background-color: transparent;
+  color: black;
+  border: 0;
+  position: absolute;
+  top: 50px;
+  right: 80px;
+}
+
+.eva.button.container.toggle.gate > label > .gate {
+  color: black;
+}
+
+.switch-button-wrapper {
+  position: relative;
+  width: 66px;
+  height: 18px;
+  border-radius: 1px;
+  border: 0.5px solid var(--text-mode-color);
+  cursor: pointer;
+}
+
+.theme-switcher__dark {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 33px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.9;
+  color: var(--btns-text-color);
+  background-color: var(--dark-theme-switch);
+  transition: 0.3s;
+}
+
+.theme-switcher__light {
+  position: absolute;
+  transform: translateX(-32px);
+  width: 33px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.9;
+  color: var(--cards-bg-color);
+  background-color: var(--light-theme-switch);
+  transition: 0.3s;
+}
+
+.dark {
+  position: absolute;
+  width: 33px;
+  height: 18px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.9;
+  color: var(--text-mode-color);
+  background-color: transparent;
+}
+
+.light {
+  position: absolute;
+  width: 33px;
+  height: 18px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.9;
+  color: var(--text-mode-color);
+}
+
+.theme-container {
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  z-index: 100;
+}
+@media screen and (min-width: 768px) {
+  .theme-container {
+    left: 15%;
+    top: 10px;
+  }
+}
+@media screen and (min-width: 1245px) {
+  .theme-container {
+    left: 15%;
+    top: 20px;
+  }
+}
+
+.infobar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--infobar-bg-color);
+  color: var(--infobar-text-color);
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.infobar > span {
+  position: relative;
+  padding: 0 10px;
+}
+.infobar > span:before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  height: 90%;
+  width: 1px;
+  background-color: var(--infobar-separator-color);
+}
+@media screen and (min-width: 1245px) {
+  .infobar {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=main.css.map */
