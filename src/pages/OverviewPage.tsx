@@ -3,12 +3,12 @@ import {
   ControlBlock,
   ItemValueTable,
   LineChart,
+  Gauge,
+  GaugeType
 } from "@eva-ics/webengine-react";
 import { StateProp } from "@eva-ics/webengine";
 // Utility modules
 import { OverviewPageProps } from "../types";
-import Gauge from "../components/gauge/Gauge";
-import { GaugeType } from "../components/gauge";
 
 const OverviewPage = ({
   buttons,
@@ -16,7 +16,7 @@ const OverviewPage = ({
   ivt,
   chart_oids,
   handle_action_success,
-  handle_action_failed,
+  handle_action_failed
 }: OverviewPageProps) => {
   return (
     <main>
@@ -32,7 +32,7 @@ const OverviewPage = ({
             labels={["sensor#1", "sensor#2"]}
             options={{
               responsive: true,
-              animations: false,
+              animations: false
             }}
             engine={eva}
           />
@@ -58,7 +58,7 @@ const OverviewPage = ({
             colors={["red", "orange"]}
             labels={["now", "hour ago"]}
             options={{
-              animations: false,
+              animations: false
             }}
             engine={eva}
           />
@@ -76,51 +76,6 @@ const OverviewPage = ({
             warnValue={40}
             engine={eva}
             diameter={250}
-            units="&#8451;"
-            showValue
-            label="Temp"
-          />
-        </li>
-        <li>
-          <Gauge
-            type={GaugeType.Minimal}
-            oid="sensor:tests/temp"
-            minValue={0}
-            maxValue={100}
-            critValue={70}
-            warnValue={40}
-            engine={eva}
-            diameter={250}
-            units="&#8451;"
-            showValue
-            label="Temp"
-          />
-        </li>
-        <li>
-          <Gauge
-            type={GaugeType.Sphere}
-            oid="sensor:tests/temp"
-            minValue={0}
-            maxValue={100}
-            critValue={70}
-            warnValue={40}
-            engine={eva}
-            diameter={250}
-            units="&#8451;"
-            showValue
-            label="Temp"
-          />
-        </li>
-        <li>
-          <Gauge
-            type={GaugeType.Standart}
-            oid="sensor:tests/temp"
-            minValue={0}
-            maxValue={100}
-            critValue={70}
-            warnValue={40}
-            engine={eva}
-            diameter={300}
             units="&#8451;"
             showValue
             label="Temp"
