@@ -841,7 +841,7 @@ div.eva.login.logo {
   display: inline-block;
 }
 div.eva.login.logo:before {
-  content: url("https://www.bohemia-automation.com/images/icons/evalogo.svg");
+  content: url("https://www.bohemia-automation.com/images/bma.svg");
 }
 
 div.eva.login.header {
