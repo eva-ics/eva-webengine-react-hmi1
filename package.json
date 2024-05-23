@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@eva-ics/webengine": "^0.5.15",
-    "@eva-ics/webengine-react": "^0.1.10",
+    "@eva-ics/webengine": "^0.7.0",
+    "@eva-ics/webengine-react": "^0.3.2",
     "@reduxjs/toolkit": "^1.9.5",
     "chart.js": "^4.3.0",
     "chartjs-adapter-date-fns": "^3.0.0",
